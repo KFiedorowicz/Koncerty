@@ -1,31 +1,83 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
-  padding: 0 1rem;
-}
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Koncerty Rap/Hip‑Hop w Polsce</title>
-  <link rel="stylesheet" href="css/styles.css">
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-header p {
-  font-size: 1.1rem;
-  color: #555;
-}
+  <style>
+    /* Reset i baza */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+      padding: 0 1rem;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Sekcja artystów */
+    .artist-list {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin: 2rem 0;
+    }
+    .artist {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .artist img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .artist h2 {
+      margin: 1rem 0;
+    }
+    .events {
+      list-style: none;
+      padding-bottom: 1rem;
+    }
+    .events li {
+      margin: 0.5rem 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -35,9 +87,8 @@ header p {
 
   <main>
     <section class="artist-list">
-      <!-- Przykładowy artysta -->
       <article class="artist">
-        <img src="img/oki.jpg" alt="Oki" />
+        <img src="oki.jpg" alt="Oki" />
         <h2>Oki</h2>
         <ul class="events">
           <li>📍 Warszawa — 12.07.2025</li>
@@ -46,7 +97,7 @@ header p {
       </article>
 
       <article class="artist">
-        <img src="img/taco.jpg" alt="Taco Hemingway" />
+        <img src="taco.jpg" alt="Taco Hemingway" />
         <h2>Taco Hemingway</h2>
         <ul class="events">
           <li>📍 Poznań — 05.09.2025</li>
@@ -54,59 +105,17 @@ header p {
       </article>
 
       <article class="artist">
-        <img src="img/bedoes.jpg" alt="Bedoes 2115" />
+        <img src="bedoes.jpg" alt="Bedoes 2115" />
         <h2>Bedoes 2115</h2>
         <ul class="events">
           <li>📍 Gdańsk — 20.06.2025</li>
         </ul>
       </article>
-      <!-- dodaj więcej artytów analogicznie -->
     </section>
-    .artist-list {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-.artist {
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
-.artist img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.artist h2 {
-  margin: 1rem 0;
-}
-.events {
-  list-style: none;
-  padding-bottom: 1rem;
-}
-.events li {
-  margin: 0.5rem 0;
-}
   </main>
-
 
   <footer>
     <p>© 2025 Twoja Strona | <a href="#contact">Kontakt</a></p>
   </footer>
 </body>
-footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  font-size: 0.9rem;
-  color: #777;
-}
-footer a {
-  color: #0073e6;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
-}
 </html>
